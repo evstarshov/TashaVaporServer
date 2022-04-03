@@ -33,7 +33,7 @@ class AuthController {
         errorMessage: "Некорректный адрес электронной почты."
     )
     
-    func signup(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
+    func register(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
         guard let body = try? req.content.decode(User.self) else { throw Abort(.badRequest) }
         
         guard body.login != nil, body.password != nil, body.name != nil, body.lastname != nil, body.email != nil else {

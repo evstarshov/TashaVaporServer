@@ -5,7 +5,7 @@
 //  Created by Евгений Старшов on 03.04.2022.
 //
 
-import Foundation
+import Vapor
 
 struct ProductResponse: Content {
     let result: Int?
