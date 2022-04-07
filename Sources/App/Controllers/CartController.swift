@@ -54,4 +54,18 @@ class CartController {
         
         return req.eventLoop.future(response)
     }
+    
+    func payCart(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
+        guard let body = try? req.content.decode(User.self) else { throw Abort(.badRequest) }
+        
+        print(body)
+        
+        let response = DefaultResponse(
+            result: 1,
+            successMessage: "Товары в корзине успешно оплачены.",
+            errorMessage: nil
+        )
+        
+        return req.eventLoop.future(response)
+    }
 }
