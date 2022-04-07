@@ -12,6 +12,7 @@ func routes(_ app: Application) throws {
     app.post("getcart", use: cartController.getCart)
     app.post("addtocart", use: cartController.addToCart)
     app.post("deletefromcart", use: cartController.deleteFromCart)
+    app.post("paycart", use: cartController.payCart)
     app.post("getreviews", use: reviewController.getReviews)
     app.post("addreview", use: reviewController.addReview)
     app.post("removereview", use: reviewController.removeReview)
