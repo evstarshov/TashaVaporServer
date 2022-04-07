@@ -9,7 +9,7 @@ import Vapor
 
 class ReviewController {
     func getReviews(_ req: Request) throws -> EventLoopFuture<[ReviewResponse]> {
-        guard let body = try? req.content.decode(Good.self) else { throw Abort(.badRequest) }
+        guard let body = try? req.content.decode(Product.self) else { throw Abort(.badRequest) }
         
         print(body)
         
@@ -42,7 +42,7 @@ class ReviewController {
         
         let response = DefaultResponse(
             result: 1,
-            successMessage: nil,
+            successMessage: "Отзыв успешно удален",
             errorMessage: nil
         )
         
