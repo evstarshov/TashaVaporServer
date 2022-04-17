@@ -5,6 +5,7 @@ func routes(_ app: Application) throws {
     let controller = AuthController()
     let cartController = CartController()
     let reviewController = ReviewController()
+    let catalogController = CatalogController()
     app.post("auth", use: controller.auth)
     app.post("logout", use: controller.logout)
     app.post("register", use: controller.register)
@@ -16,4 +17,6 @@ func routes(_ app: Application) throws {
     app.post("getreviews", use: reviewController.getReviews)
     app.post("addreview", use: reviewController.addReview)
     app.post("removereview", use: reviewController.removeReview)
+    app.post("getcatalog", use: catalogController.getCatalog)
+    app.post("getproduct", use: catalogController.getProduct)
 }
