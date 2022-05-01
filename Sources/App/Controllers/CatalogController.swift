@@ -16,7 +16,7 @@ class CatalogController {
         print(body)
         
         let response = [
-            CatalogResponse(productId: 123, productName: "Яркий тортик маша и медведь", price: 3300, shortDescription: "Внутри торт «трюфель»:\nшоколадные коржи, трюфельная шоколадная начинка, шоколадный кремчиз", picUrl: "https://vk.com/photo-211980076_457239018?access_key=4763903cc5d31aed5b"),
+            CatalogResponse(productId: 123, productName: "Яркий тортик маша и медведь", price: 3300, shortDescription: "Внутри торт «трюфель»:\nшоколадные коржи, трюфельная шоколадная начинка, шоколадный кремчиз", picUrl: "https://sun9-78.userapi.com/s/v1/ig2/uxyctBBWNrGkj_2f5n2cY77DcOyv-SZVvADvOhNS1ZhpR_mOmNCp4hLbcCB7bORG3U1jXSEQBxqQABbXtr5dMQtD.jpg?size=1440x1800&quality=96&type=album"),
             CatalogResponse(productId: 124, productName: "Двухярусный свадебный торт", price: 7900, shortDescription: "Торт украшение для вашей свадьбы", picUrl: "https://sun9-1.userapi.com/impg/MiMiqpexbfOA0EB7bM9cGxfK9I-tbPHWujAPSw/LvGdoeto8V4.jpg?size=1440x1719&quality=96&sign=abdf44d6089c41022cf5d3b2a4e9df30&type=album"),
             CatalogResponse(productId: 125, productName: "Медовый торт цифра", price: 2499, shortDescription: "на день рождения пенсионеру", picUrl: "https://sun9-35.userapi.com/impg/1qJD1cZIWeiqOR2AJeH_B-9WZ2DUQXsZJ-K8eg/AlF40B0kDwM.jpg?size=1440x1440&quality=96&sign=b6fb638231c1dc993ae46a99a5839432&type=album"),
         ]
